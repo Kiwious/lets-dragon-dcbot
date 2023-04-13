@@ -1,4 +1,4 @@
-import discord, os
+import discord, os, asyncio
 from discord.ext import commands
 from dotenv import load_dotenv
 
@@ -19,4 +19,14 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-client.run(os.getenv('TOKEN'))
+async def load_extensions():
+    for filename in os.listdir("./commands"):
+        if filename.endswith(".py"):
+            await client.load_extension(f"commands.{filename[:-3]}")
+
+async def main():
+    async with client:
+        await load_extensions()
+        await client.start(os.getenv('TOKEN'))
+
+asyncio.run(main())

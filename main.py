@@ -1,8 +1,10 @@
-import discord, os, asyncio
+import discord, os, asyncio, logging, sys
 from discord.ext import commands
 from dotenv import load_dotenv
 
 load_dotenv()
+
+logging.basicConfig(stream=sys.stdout, level=logging.ERROR)
 
 client = commands.Bot(
     command_prefix='.',

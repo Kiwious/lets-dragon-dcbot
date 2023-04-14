@@ -15,16 +15,14 @@ class Settings:
     # GRIEFING SYSTEM:
 
     # Erforderliche Bot-Rechte (True => Erforderlich, False => Nicht erforderlich):
+    GRIEF_SERVER=1029431306582491226
+    TEST_SERVER=1092150923897339964
     CLIENT_PERMISSIONS={
         'add_reactions': True,
         'administrator': True,
         'attach_files': True,
         'ban_members': True,
         'change_nickname': True,
-        'connect': True,
-        'create_instant_invite': True,
-        'create_public_threads': True,
-        'create_private_threads': True,
         'deafen_members': True,
         'embed_links': True,
         'external_emojis': True,
@@ -43,24 +41,9 @@ class Settings:
         'manage_webhooks': True,
         'mention_everyone': True,
         'moderate_members': True,
-        'move_members': True,
-        'mute_members': True,
-        'priority_speaker': True,
-        'read_message_history': True,
         'read_messages': True,
-        'request_to_speak': True,
         'send_messages': True,
-        'send_messages_in_threads': True,
-        'send_tts_messages': True,
-        'speak': True,
-        'stream': True,
-        'use_application_commands': True,
-        'use_embedded_activities': True,
         'use_external_emojis': True,
         'use_external_stickers': True,
-        'use_voice_activation': True,
-        'value': True,
-        'view_audit_log': True,
         'view_channel': True,
-        'view_guild_insights': True
     }

